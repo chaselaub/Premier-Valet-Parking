@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Valet Parking - Columbus, OH Valet Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="Premier Valet Parking Logo" class="nav-logo-img">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#areas" class="nav-link">Areas We Serve</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#apply" class="nav-link apply-btn">Apply Here</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Park With Ease, Leave With Peace</h1>
+                <p class="hero-subtitle">Welcome to Premier Valet Parking, where we transform your parking experience in Columbus, OH. Our professional team is dedicated to providing fast, efficient, and courteous valet parking services.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">Our Services</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Us</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-photo">
+                    <img src="images/valet-service-1.jpg" alt="Professional valet service - Premier Valet Parking" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Experience Exceptional Valet Parking Services in Columbus, OH</h2>
+                    <p>Finding reliable valet parking services can be a source of stress, with common concerns around waiting times, vehicle safety, and service quality. Premier Valet Parking, rooted in Columbus, OH, and the surrounding areas, is here to change that narrative.</p>
+                    <p>We offer a seamless solution to these issues, enhanced by a personal touch that sets us apart. Our founder, Ryan, plays a hands-on role in problem-solving and operations, demonstrating a unique approach to addressing challenges and a steadfast commitment to excellence.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Service Available</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/valet-service-6.jpg" alt="Premier Valet Parking Columbus OH" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle"><strong>With services including restaurant valet parking, special event valet, hotel valet parking, nightclub valet, and parking attendants & supervision, we cater to a variety of needs, ensuring a stress-free parking experience for every occasion.</strong></p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/valet-service-8.jpg" alt="Restaurant Valet Parking Columbus OH" class="service-img">
+                    </div>
+                    <h3>Restaurant Valet</h3>
+                    <p>Elevate your dining with our restaurant valet parking. Our team ensures a seamless welcome, efficient vehicle handling, and meticulous care.</p>
+                    <ul class="service-features">
+                        <li>Quick, friendly greeting</li>
+                        <li>Efficient car handling</li>
+                        <li>Secure key storage</li>
+                        <li>Damage inspection</li>
+                        <li>Ready on return</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/valet-service-7.jpg" alt="Special Event Valet Columbus OH" class="service-img">
+                    </div>
+                    <h3>Special Event Valet</h3>
+                    <p>Make events memorable with valet services. From weddings to corporate functions, we offer distinguished service, ensuring every guest feels welcomed.</p>
+                    <ul class="service-features">
+                        <li>Grand entrance & exit</li>
+                        <li>Dedicated staff</li>
+                        <li>Efficient organization</li>
+                        <li>Careful parking</li>
+                        <li>Memorable service</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/valet-service-2.jpg" alt="Hotel Valet Parking Columbus OH" class="service-img">
+                    </div>
+                    <h3>Hotel Valet</h3>
+                    <p>Our hotel valet parking enhances guest experiences from arrival. We aim for lasting impressions with prompt service, vehicle safety, and attention to detail.</p>
+                    <ul class="service-features">
+                        <li>Luxurious welcome</li>
+                        <li>Secure parking</li>
+                        <li>Damage inspection</li>
+                        <li>Efficient service</li>
+                        <li>Guest satisfaction</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/valet-service-4.jpg" alt="Nightclub Valet Columbus OH" class="service-img">
+                    </div>
+                    <h3>Nightclub Valet</h3>
+                    <p>Experience convenience at nightclubs with our valet service. Enjoy your night to the fullest, knowing your car is parked safely and will be ready when you are.</p>
+                    <ul class="service-features">
+                        <li>Hassle-free parking</li>
+                        <li>Secure vehicle care</li>
+                        <li>Swift service</li>
+                        <li>Safety prioritized</li>
+                        <li>Enjoy your night</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/valet-service-5.jpg" alt="Parking Attendants and Supervision Columbus OH" class="service-img attendants-img">
+                    </div>
+                    <h3>Parking Attendants & Supervision</h3>
+                    <p>Professional parking management and supervision services. Our certified attendants ensure smooth operations, security, and excellent customer service for your parking facility.</p>
+                    <ul class="service-features">
+                        <li>Professional attendants</li>
+                        <li>24/7 supervision</li>
+                        <li>Traffic management</li>
+                        <li>Security monitoring</li>
+                        <li>Customer assistance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">See What Our Customers Have to Say!</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Ryan is the best!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Title Connect Agency</span>
+                        <span class="author-date">11/08/2019</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"On time. Very nice, do what they need to do"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Bexley Premier</span>
+                        <span class="author-date">12/07/2018</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Thanks, we will use you every time!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Hyerion Motors</span>
+                        <span class="author-date">09/26/2018</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Great service and always a good experience when we use them!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Pillar Technology</span>
+                        <span class="author-date">09/26/2018</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Premier Parking created an unparalleled arrival experience for our over 300 guests. We will always use Premier Parking for every single event"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">ITMartini</span>
+                        <span class="author-date">05/18/2018</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"They've been professional, reliable and have helped me build my brand for years."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <span class="author-name">Hawk Galleries</span>
+                        <span class="author-date">01/03/2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas We Serve Section -->
+    <section id="areas" class="areas">
+        <div class="container">
+            <h2 class="section-title">Areas We Serve</h2>
+            <p class="section-subtitle"><strong>We’re proud to provide quality service throughout Columbus, OH and the surrounding areas, and we're always open to working beyond that too!</strong></p>
+            <div class="areas-grid">
+                <div class="area-item">Columbus, OH</div>
+                <div class="area-item">New Albany, OH</div>
+                <div class="area-item">Upper Arlington, OH</div>
+                <div class="area-item">Dublin, OH</div>
+                <div class="area-item">Bexley, OH</div>
+                <div class="area-item">Blacklick, OH</div>
+                <div class="area-item">Short North, OH</div>
+                <div class="area-item">German Village, OH</div>
+                <div class="area-item">Grandview, OH</div>
+                <div class="area-item">Worthington, OH</div>
+                <div class="area-item">Westerville, OH</div>
+                <div class="area-item">Powell, OH</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle"><strong>For all service inquiries please leave us a voicemail or an email and we will get back to you as soon as possible.</strong></p>
+                <div class="contact-content">
+                    <div class="contact-info-grid">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(614) 499-2899</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>INFO@premiervaletparking.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>100 E Broad St Ste 1301<br>Columbus, OH</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p><strong>Mon - Fri:</strong> 9:00 AM - 5:00 PM<br>
+                                <strong>Sat - Sun:</strong> Closed<br>
+                                <strong>Restaurants, Hotels & Nightclubs:</strong> 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-owners">
+                            <p class="footer-owner">Owner - Ryan Gale</p>
+                            <p class="footer-manager">General Manager - Chase Laub</p>
+                        </div>
+                    </div>
+                    <p>Professional valet parking services in Columbus, OH and surrounding areas. 20+ years of experience with exceptional customer service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#areas">Areas We Serve</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Restaurant Valet</li>
+                        <li>Special Event Valet</li>
+                        <li>Hotel Valet</li>
+                        <li>Nightclub Valet</li>
+                        <li>Parking Attendants & Supervision</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="images/green logo.png" alt="Premier Valet Parking Green Logo" class="footer-logo-img">
+                <p>&copy; 2025, Premier Valet Parking. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
