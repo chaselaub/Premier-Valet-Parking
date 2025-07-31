@@ -262,4 +262,28 @@ if ('serviceWorker' in navigator) {
                 console.log('SW registration failed: ', registrationError);
             });
     });
-} 
+}
+
+// Quote form handling
+document.addEventListener('DOMContentLoaded', function() {
+    const quoteForm = document.getElementById('quoteForm');
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', function(e) {
+            // Let Formspree handle the submission
+            // The form will automatically submit to Formspree
+            // and redirect to a success page or show a success message
+            
+            // Show loading state
+            const submitBtn = quoteForm.querySelector('.quote-submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Reset button after 3 seconds (Formspree will handle the redirect)
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 3000);
+        });
+    }
+}); 

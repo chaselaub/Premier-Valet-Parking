@@ -154,18 +154,26 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
-    flex: unset;
-    justify-content: flex-end;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
     margin-left: 0;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .nav-link {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     transition: color 0.3s ease;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content;
 }
 
 .nav-link:hover {
@@ -323,7 +331,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--text-dark);
 }
 
@@ -856,23 +864,78 @@ body {
     color: #6b7280;
 }
 
+.quote-form-item {
+    grid-column: span 2;
+}
+
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.quote-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.quote-submit-btn {
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.quote-submit-btn:hover {
+    background: var(--primary-green-dark);
+}
+
 .contact-box {
     border: 2px solid var(--primary-green);
     border-radius: 16px;
-    padding: 2.5rem 2rem;
+    padding: 3rem 2.5rem;
     background: var(--white);
-    max-width: 950px;
+    max-width: 900px;
     margin: 0 auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .contact-info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
     justify-items: center;
     align-items: stretch;
-    margin-top: 2rem;
+    margin-top: 0;
     border: none;
     padding: 0;
     background: none;
@@ -1213,6 +1276,10 @@ body {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .quote-form-item {
+        grid-column: span 1;
     }
 
     .pricing-card.featured {
