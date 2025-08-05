@@ -41,19 +41,31 @@ body {
 }
 
 /* Navigation */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 1rem 0;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-}
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 1rem 0;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar {
+            padding: 0.5rem 0; /* Reduced padding for mobile */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .navbar {
+            padding: 0.25rem 0; /* Further reduced padding for very small screens */
+        }
+    }
 
 .nav-container {
     max-width: 1200px;
@@ -72,12 +84,24 @@ body {
     margin-left: 0;
 }
 
-.nav-logo-img {
-    height: 144px;
-    width: auto;
-    display: block;
-    margin-right: 0.5rem;
-}
+    .nav-logo-img {
+        height: 144px;
+        width: auto;
+        display: block;
+        margin-right: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+        .nav-logo-img {
+            height: 80px; /* Reduced height for mobile */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .nav-logo-img {
+            height: 60px; /* Further reduced height for very small screens */
+        }
+    }
 
 .logo-emblem {
     position: relative;
@@ -1253,9 +1277,9 @@ body {
     }
 
     .hero {
-        padding-top: 200px; /* Significantly increased padding to prevent navigation overlap */
-        min-height: calc(100vh - 200px);
-        margin-top: 20px; /* Additional margin to ensure separation from navbar */
+        padding-top: 300px; /* Much more aggressive padding to prevent navigation overlap */
+        min-height: calc(100vh - 300px);
+        margin-top: 30px; /* Additional margin to ensure separation from navbar */
     }
     
     .hero-container {
@@ -1359,9 +1383,9 @@ body {
     }
 
     .hero {
-        padding-top: 180px; /* Significantly increased padding for very small screens */
-        min-height: calc(100vh - 180px);
-        margin-top: 15px; /* Additional margin for very small screens */
+        padding-top: 250px; /* Much more aggressive padding for very small screens */
+        min-height: calc(100vh - 250px);
+        margin-top: 25px; /* Additional margin for very small screens */
     }
     
     .hero-title {
