@@ -57,13 +57,13 @@ body {
     
     @media (max-width: 768px) {
         .navbar {
-            padding: 0.5rem 0; /* Reduced padding for mobile */
+            padding: 0.25rem 0; /* Much smaller padding for mobile */
         }
     }
     
     @media (max-width: 480px) {
         .navbar {
-            padding: 0.25rem 0; /* Further reduced padding for very small screens */
+            padding: 0.1rem 0; /* Minimal padding for very small screens */
         }
     }
 
@@ -93,13 +93,13 @@ body {
     
     @media (max-width: 768px) {
         .nav-logo-img {
-            height: 80px; /* Reduced height for mobile */
+            height: 60px; /* Further reduced height for mobile */
         }
     }
     
     @media (max-width: 480px) {
         .nav-logo-img {
-            height: 60px; /* Further reduced height for very small screens */
+            height: 50px; /* Even smaller height for very small screens */
         }
     }
 
@@ -1301,9 +1301,9 @@ body {
     }
 
     .hero {
-        padding-top: 180px; /* Reduced padding to shrink the gap */
-        min-height: calc(100vh - 180px);
-        margin-top: 15px; /* Reduced margin to shrink the gap */
+        padding-top: 120px; /* Much smaller padding to minimize the gap */
+        min-height: calc(100vh - 120px);
+        margin-top: 5px; /* Minimal margin to minimize the gap */
     }
     
     .hero-container {
@@ -1407,9 +1407,9 @@ body {
     }
 
     .hero {
-        padding-top: 160px; /* Reduced padding for very small screens */
-        min-height: calc(100vh - 160px);
-        margin-top: 10px; /* Reduced margin for very small screens */
+        padding-top: 100px; /* Much smaller padding for very small screens */
+        min-height: calc(100vh - 100px);
+        margin-top: 0px; /* No margin for very small screens */
     }
     
     .hero-title {
