@@ -57,13 +57,13 @@ body {
     
     @media (max-width: 768px) {
         .navbar {
-            padding: 0.5rem 0; /* Restored to reasonable padding for mobile */
+            padding: 1rem 0; /* Increased padding for mobile */
         }
     }
     
     @media (max-width: 480px) {
         .navbar {
-            padding: 0.25rem 0; /* Restored to reasonable padding for very small screens */
+            padding: 0.75rem 0; /* Increased padding for very small screens */
         }
     }
 
@@ -93,13 +93,13 @@ body {
     
     @media (max-width: 768px) {
         .nav-logo-img {
-            height: 80px; /* Restored to reasonable size for mobile */
+            height: 100px; /* Much larger height for mobile */
         }
     }
     
     @media (max-width: 480px) {
         .nav-logo-img {
-            height: 70px; /* Restored to reasonable size for very small screens */
+            height: 80px; /* Larger height for very small screens */
         }
     }
 
@@ -1301,22 +1301,22 @@ body {
     }
 
     .hero {
-        padding-top: 140px; /* Adjusted padding */
-        min-height: calc(100vh - 140px);
+        padding-top: 20px; /* Extremely small padding to minimize the gap */
+        min-height: calc(100vh - 20px);
         margin-top: 0px; /* No margin */
     }
     
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 1rem; /* Reduced gap between elements */
+        gap: 0.5rem; /* Much smaller gap between elements */
         padding-top: 0; /* Remove any top padding from container */
     }
 
     .hero-title {
         font-size: 2.5rem;
         margin-top: 0; /* Remove top margin to bring title closer to top */
-        margin-bottom: 1rem; /* Reduced bottom margin */
+        margin-bottom: 0.5rem; /* Much smaller bottom margin */
     }
 
     .hero-subtitle {
@@ -1410,15 +1410,15 @@ body {
     }
 
     .hero {
-        padding-top: 120px; /* Adjusted padding for very small screens */
-        min-height: calc(100vh - 120px);
+        padding-top: 10px; /* Extremely small padding for very small screens */
+        min-height: calc(100vh - 10px);
         margin-top: 0px; /* No margin for very small screens */
     }
     
     .hero-title {
         font-size: 2rem;
         margin-top: 0; /* Remove top margin to bring title closer to top */
-        margin-bottom: 1rem; /* Reduced bottom margin */
+        margin-bottom: 0.5rem; /* Much smaller bottom margin */
     }
     
     .hero-img {
