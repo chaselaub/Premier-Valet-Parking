@@ -1222,7 +1222,7 @@ body {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 80px; /* Increased top position to account for larger navbar */
         flex-direction: column;
         background-color: white;
         width: 100%;
@@ -1253,8 +1253,9 @@ body {
     }
 
     .hero {
-        padding-top: 140px; /* Increased padding to prevent navigation overlap */
-        min-height: calc(100vh - 140px);
+        padding-top: 200px; /* Significantly increased padding to prevent navigation overlap */
+        min-height: calc(100vh - 200px);
+        margin-top: 20px; /* Additional margin to ensure separation from navbar */
     }
     
     .hero-container {
@@ -1358,8 +1359,9 @@ body {
     }
 
     .hero {
-        padding-top: 120px; /* Increased padding for very small screens */
-        min-height: calc(100vh - 120px);
+        padding-top: 180px; /* Significantly increased padding for very small screens */
+        min-height: calc(100vh - 180px);
+        margin-top: 15px; /* Additional margin for very small screens */
     }
     
     .hero-title {
