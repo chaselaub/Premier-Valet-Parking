@@ -1145,22 +1145,24 @@ body {
     @media (max-width: 768px) {
         .footer-logo-img {
             height: 200px; /* Reduced height for mobile */
-            margin: 0 0 0.5rem 0; /* Remove all margins and position to the left */
+            margin: 0 auto 0.5rem auto !important; /* Center the logo with !important */
             display: block;
             width: auto; /* Ensure width is auto for proper centering */
             position: relative;
-            left: 0; /* Force to the left edge */
+            left: auto !important; /* Override any left positioning */
+            right: auto !important; /* Override any right positioning */
         }
     }
     
     @media (max-width: 480px) {
         .footer-logo-img {
             height: 150px; /* Further reduced height for very small screens */
-            margin: 0 0 0.5rem 0; /* Remove all margins and position to the left */
+            margin: 0 auto 0.5rem auto !important; /* Center the logo with !important */
             display: block;
             width: auto; /* Ensure width is auto for proper centering */
             position: relative;
-            left: 0; /* Force to the left edge */
+            left: auto !important; /* Override any left positioning */
+            right: auto !important; /* Override any right positioning */
         }
     }
 
