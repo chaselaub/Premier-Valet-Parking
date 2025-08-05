@@ -1146,6 +1146,7 @@ body {
         .footer-logo-img {
             height: 200px; /* Reduced height for mobile */
             margin: 0 auto 0.5rem auto; /* Center the logo on mobile */
+            display: block;
         }
     }
     
@@ -1153,6 +1154,7 @@ body {
         .footer-logo-img {
             height: 150px; /* Further reduced height for very small screens */
             margin: 0 auto 0.5rem auto; /* Center the logo on very small screens */
+            display: block;
         }
     }
 
