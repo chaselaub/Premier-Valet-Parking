@@ -1301,9 +1301,9 @@ body {
     }
 
     .hero {
-        padding-top: 300px; /* Much more aggressive padding to prevent navigation overlap */
-        min-height: calc(100vh - 300px);
-        margin-top: 30px; /* Additional margin to ensure separation from navbar */
+        padding-top: 180px; /* Reduced padding to shrink the gap */
+        min-height: calc(100vh - 180px);
+        margin-top: 15px; /* Reduced margin to shrink the gap */
     }
     
     .hero-container {
@@ -1407,9 +1407,9 @@ body {
     }
 
     .hero {
-        padding-top: 250px; /* Much more aggressive padding for very small screens */
-        min-height: calc(100vh - 250px);
-        margin-top: 25px; /* Additional margin for very small screens */
+        padding-top: 160px; /* Reduced padding for very small screens */
+        min-height: calc(100vh - 160px);
+        margin-top: 10px; /* Reduced margin for very small screens */
     }
     
     .hero-title {
