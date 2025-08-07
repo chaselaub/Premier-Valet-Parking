@@ -1321,12 +1321,12 @@ body {
     }
     
     .hero::before {
-        top: 50%;
+        top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
         max-width: 400px;
-        height: 300px;
+        height: 250px;
         background-position: center;
     }
     
@@ -1445,12 +1445,12 @@ body {
     }
     
     .hero::before {
-        top: 50%;
+        top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 85%;
         max-width: 300px;
-        height: 250px;
+        height: 200px;
         background-position: center;
     }
     
